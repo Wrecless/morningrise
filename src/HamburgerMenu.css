@@ -1,0 +1,73 @@
+.hamburger {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 2rem;
+	height: 2rem;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	z-index: 10;
+}
+
+.hamburger .line {
+	width: 2rem;
+	height: 0.25rem;
+	background: #333;
+}
+
+.menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 30vh; /* 100% of the viewport width */
+	background: #eee;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: transform 0.3s ease-in-out;
+	transform: translateX(-100%);
+}
+
+.menu.open {
+	transform: translateX(0);
+}
+
+.menu ul {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.menu ul li {
+	margin: 1rem 0;
+}
+
+.menu ul li button {
+	color: #333;
+	background: none;
+	border: none;
+	text-decoration: none;
+	font-size: 1.5rem;
+	text-align: center;
+	cursor: pointer;
+	padding: 0.5rem 1rem; /* Added padding for better visual effect */
+	transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.menu ul li button:hover {
+	color: #333;
+	background-color: #ddd;
+	box-shadow:  -20px -20px 60px #c7c7c7,
+	20px 20px 60px #ffffff;
+	border-bottom: 2px solid #333; /* Added underline on hover */
+
+}
+
+

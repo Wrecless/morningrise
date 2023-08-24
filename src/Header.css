@@ -1,0 +1,32 @@
+.title-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	background: radial-gradient(circle, #FFD700, #FFA500);
+	border-radius: 50%;
+	width: 200px;
+	margin: 0 auto;
+	animation: sunrise 5s infinite alternate;
+}
+
+h1 {
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to top, red, orange);
+	-webkit-background-clip: text;
+	color: transparent;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes sunrise {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
